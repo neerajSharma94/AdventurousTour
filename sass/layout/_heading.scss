@@ -1,0 +1,27 @@
+ .heading{
+     
+     h2{
+             display: inline-block;
+             background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+             -webkit-background-clip: text;
+             background-clip: text;
+             color: transparent;
+             font-size: 3rem;
+             text-transform: uppercase;
+       }
+
+    h3{
+        display: inline-block;
+         background-image: linear-gradient(to right, $color-primary-dark, $color-primary-light);
+         -webkit-background-clip: text;
+         background-clip: text;
+         color: transparent;
+         font-size: 3rem;
+         text-transform: uppercase;
+         padding: 1.3rem;
+    }
+
+ }
+ 
+ 
+ 

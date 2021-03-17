@@ -1,0 +1,56 @@
+
+
+.section-featured{
+    background-image: linear-gradient(to right bottom , rgba($color-primary-dark, .8), rgba($color-primary-light, .7)), url(../img/nat-10.jpg);
+   
+    background-position: center;
+    // clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+    margin-top: -10rem;
+    transform: skewY(-7deg);
+    & > * {
+        transform: skewY(7deg);
+    }
+
+    &-card{
+    
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(30rem , 1fr));
+        grid-column-gap: 2rem;
+        padding: 10rem;
+       
+       
+
+
+        li{
+            list-style: none;
+            background-color: rgba($color-white, .5);
+            
+            padding: 10rem 4rem;
+            margin: 10rem 2rem;
+            box-shadow: .5rem .5rem .3rem rgba($color-black,.3);
+            transition: all .5s ease-in-out;
+            border-radius: .5rem;
+            backdrop-filter: blur(2px);
+            
+            h3{
+                color: $color-grey;
+                margin-bottom: 3rem;
+                text-transform: uppercase;
+                font-size: 2rem;
+            }
+            p{
+                color: $color-grey;
+                line-height: 1.5rem;
+                font-size: 1.6rem;
+
+            }
+        }
+        li:hover{
+            transform: scale(1.1) translateY(-1rem);
+            box-shadow:.5rem 1rem .3rem rgba($color-black,.3);
+            backdrop-filter: blur(5px);
+
+        }
+    }
+
+}

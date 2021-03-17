@@ -1,0 +1,84 @@
+.header{
+    background-image: linear-gradient(to bottom right, rgba($color-primary-light, 0.8), 
+    rgba($color-primary-dark, 0.9) ) ,
+     url(../img/nat-6.jpg);
+   
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    /* clip-path: polygon( 50% 0, 100% 100%, 0 100%);  triangle shape*/ 
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    position: relative;
+
+     @media only screen and (max-width: 37.5em){
+         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+     }
+}
+.logo-img{
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.text-box{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    text-align: center;
+
+   
+}
+
+ .header-primary{
+        text-transform: uppercase;
+        color: aliceblue;  
+        backface-visibility: hidden;
+            
+            &-main{
+                display: block;
+                font-weight: 400;
+                font-size: 6rem;
+                letter-spacing: 4px;
+                animation: moveInLeft 1s ease-out;
+            
+                /* animation-name: moveInLeft;
+                animation-duration: 1s;
+                animation-timing-function: ease-out; */
+               
+
+                @media only screen and (max-width: 56.25em){
+                    letter-spacing: 2px;
+                    font-size: 5rem;
+                }
+                 @media only screen and (max-width: 37.5em){
+                    letter-spacing: 2px;
+                    font-size: 4rem;
+                }
+
+               
+            }
+            &-sub{
+                display: block;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 17px;
+                font-size: 1.5rem;
+                animation: moveInRight 1s ease-out;
+                margin-bottom: 3rem;
+                /* animation-name: moveInRight;
+                animation-duration: 1s;
+                animation-timing-function: ease-out; */
+
+                  @media only screen and (max-width: 56.25em){
+                    letter-spacing: 14px;
+                    font-size: 1rem;
+                }
+                 @media only screen and (max-width: 37.5em){
+                    letter-spacing: 2px;
+                    font-size: .7rem;
+                }
+            
+            }
+    }
